@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="grid md:grid-cols-3">
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between items-center">
+                    <h1 class="border-gray-400 border-b-2">
+                        <a href="/" class="font-bold uppercase p-4 sm:text-sm md:text-lg lg:text-2xl">Food Hotel</a>
+                    </h1>
+                    <di class="px-4 cursor-pointer md:hidden" id="toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                          
+                    </div>
+                </div>
+                <ul class="text-sm mt-6 hidden md:block" id="menu">
+                    <li>
+                        <a href="#" class="font-bold text-gray-700">
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>About</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+
+                    
+                </ul>
+            </nav>
+        </div>
+        <!-- End of nav bar -->
+
+        <main class="px-16 py-16 bg-gray-100 md:col-span-2">
+            <div class="flex justify-center md:justify-end gap-3">
+                <a href="#" class="button border-red-300 border-2">Login</a>
+                <a href="#" class="button border-red-300 border-2">Sign up</a>
+            </div>
+            <header>
+                <h2 class="text-gray-700 text-6xl">Reciepes</h2>
+                <h3 class="text-2xl">For People</h3>
+            </header>
+
+            <div>
+                <h4 class="font-bold mt-12 pb-2 border-b-2 border-gray-400">Larest Recipes</h4>
+                <div class="mt-8 grid gap-4 lg:grid-cols-3">
+                    <!-- Cards -->
+                    <div class="card">
+                        <img src="images/f1.png" alt="" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4 flex-col justify-center">
+                            <span class="font-bold">5 Teaks Stew</span>
+                            <span class="block text-gray-500">Recipe By Foma</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>
+                              
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/f2.png" alt="" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4 flex-col justify-center">
+                            <span class="font-bold">5 Teaks Stew</span>
+                            <span class="block text-gray-500">Recipe By Foma</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/f3.png" alt="" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4 flex-col justify-center">
+                            <span class="font-bold">5 Teaks Stew</span>
+                            <span class="block text-gray-500">Recipe By Foma</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="images/f1.png" alt="" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4 flex-col justify-center">
+                            <span class="font-bold">5 Teaks Stew</span>
+                            <span class="block text-gray-500">Recipe By Foma</span>
+                        </div>
+                        <div class="badge">
+                            <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="font-bold mt-12 pb-2">Most Popular</h4>
+                <div class="mt-8">
+                <!-- Cards -->
+
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="button">More</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
